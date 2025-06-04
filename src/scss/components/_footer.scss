@@ -1,0 +1,22 @@
+.footer {
+  height: 272px;
+  width: 100%;
+  background-color: rgba(93, 113, 221, 0.05);
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    gap: 40px;
+  }
+  &__logo {
+    height: 48px;
+    width: 48px;
+  }
+  &__menu {
+    display: flex;
+    flex-direction: row;
+    column-gap: 80px;
+  }
+}

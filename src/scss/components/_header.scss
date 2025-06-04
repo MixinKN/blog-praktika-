@@ -1,0 +1,42 @@
+.header {
+  background-color: var(--background);
+  padding-top: 11px;
+  padding-bottom: 11px;
+  &__logo {
+    height: 48px;
+    width: 48px;
+  }
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__menu {
+    display: flex;
+    flex-direction: row;
+    column-gap: 40px;
+    &-item {
+
+    }
+    &-item:is(:active,:hover,:focus-visible) {
+      text-decoration: var(--primary);
+      color: var(--primary);
+      text-decoration: underline;
+    }
+    &-link:is(:active,:hover,:focus-visible) {
+      text-decoration: var(--primary);
+      color: var(--primary);
+      text-decoration: underline;
+    }
+    &-number {
+      color: var(--primary);
+    }
+  }
+}
+
+.choice--list {
+  color: var(--primary) !important;
+  text-decoration: var(--primary);
+  text-decoration: underline;
+}

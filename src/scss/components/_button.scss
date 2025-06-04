@@ -1,0 +1,33 @@
+.button--small {
+  border-radius: 8px;
+  border: unset;
+  cursor: pointer;
+  height: 37px;
+  padding: 8px 16px 8px 16px;
+  z-index: 1000;
+}
+
+.button {
+  border-radius: 20px;
+  border: unset;
+  cursor: pointer;
+}
+
+.button--long {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  border: unset;
+  cursor: pointer;
+  height: 37px;
+  width: 220px;
+  padding: 8px 16px 8px 16px;
+}
+
+.button--a {
+  display: inline-flex;
+  height: auto;
+}
+.button--a:is(:hover) {
+  transform: scale(1.05);
+  transition: all 100ms;
+}
