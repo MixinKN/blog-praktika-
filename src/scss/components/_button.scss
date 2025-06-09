@@ -30,4 +30,5 @@
 .button--a:is(:hover) {
   transform: scale(1.05);
   transition: all 100ms;
+  background-color: rgba(93, 113, 221, 0.15);
 }

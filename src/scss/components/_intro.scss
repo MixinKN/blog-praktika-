@@ -1,5 +1,5 @@
 .intro--category {
-  display: flex;
+  display: flex !important;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -11,6 +11,7 @@
 }
 .intro--page {
   background-color: var(--background);
+  transform: scaleX(1)!important;
 }
 
 .intro__img {
@@ -21,4 +22,13 @@
 
 .intro {
   transform: scaleX(1.145);
+  @include mobile {
+    display: none;
+  }
+  &__mobile {
+    display: none;
+    @include mobile {
+      display: block;
+    }
+  }
 }

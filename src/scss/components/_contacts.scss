@@ -1,0 +1,97 @@
+.contacts {
+  &__container {
+    display: flex;
+    flex-direction: row;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    padding-left: 270px;
+    padding-right: 270px;
+    justify-content: space-between;
+    @include laptop-s {
+      padding-right: 40px;
+      padding-left: 40px;
+    }
+    @include mobile {
+      flex-direction: column;
+      padding: unset;
+      row-gap: 30px;
+      align-items: center;
+    }
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    height: 460px;
+    background-color: var(--background);
+    border-radius: var(--radius);
+    row-gap: 20px;
+    padding: 60px 40px 60px 40px;
+    box-shadow: 4px 8px 4px 8px rgba(8, 24, 111, 0.1);
+    @include mobile {
+      width: 100%;
+      height: auto;
+      border-radius: unset;
+      box-shadow: unset;
+      align-items: center;
+    }
+    &-title {
+
+    }
+    &-name {
+      border-radius: var(--radius);
+      height: 50px;
+      padding: 13px 30px 13px 30px;
+      border: 0;
+      background-color: var(--foreground);
+      outline-color: var(--primary);
+      width: 70%;
+    }
+    &-email {
+      border-radius: var(--radius);
+      height: 50px;
+      padding: 13px 30px 13px 30px;
+      border: 0;
+      background-color: var(--foreground);
+      outline-color: var(--primary);
+      width: 70%;
+    }
+    &-description {
+      border-radius: var(--radius);
+      height: 50px;
+      padding: 13px 30px 13px 30px;
+      border: 0;
+      background-color: var(--foreground);
+      outline-color: var(--primary);
+      width: 70%;
+    }
+    &-subscribe {
+      border-radius: var(--radius);
+      height: 50px;
+      padding: 13px 30px 13px 30px;
+      color: var(--background);
+      background-color: var(--primary);
+      border: 0;
+      width: 80%;
+    }
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    padding-top: 60px;
+    @include mobile {
+      justify-content: center;
+    }
+    &-communication {
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+    }
+    &-icons {
+      display: flex;
+      flex-direction: row;
+      column-gap: 20px;
+    }
+  }
+}

@@ -27,8 +27,11 @@
         </div>
     </header>
     <main>
-        <div class="intro--page">
+        <div class="intro intro--page">
             <img src="./src/img/image-3.jpg" alt="intro" class="intro__img container">
+        </div>
+        <div class="intro__mobile">
+            <img src="./src/img/intro-inside-mobile.jpg" alt="intro-mobile">
         </div>
         <section class="inside inside--page">
             <div class="inside__container container">
@@ -56,31 +59,84 @@
                             <button class="inside__interactive-button button--small main--text"><i class="ri-arrow-left-s-line"> Предыдущая новость</i></button>
                             <button class="inside__interactive-button button--small main--text">Следующая новость <i class="ri-arrow-right-s-line"></i></button>
                         </div>
+                        <!--row down-->
+                        <div class="content__row-down">
+                            <h3 class="content__news-header title--text">Популярные новости</h3>
+                            <div class="content__news-scroll-adaptive" id="newsScrollTablet">
+                                <div class="content__news" id="newsScrollContentTablet">
+                                    <div class="content__news-item">
+                                        <h4 class="content__news-title main--text">ITAM&SAMDay – самая настоящая удача!</h4>
+                                        <span class="content__news-data little-text-2">13 дек 2020</span>
+                                    </div>
+                                    <div class="content__news-item">
+                                        <h4 class="content__news-title main--text">Секреты лицензирования. Всё, что вы хотели знать про Microsoft, SAP и Oracle, но не знали, у кого спросить ...</h4>
+                                        <span class="content__news-data little-text-2">10 дек 2020</span>
+                                    </div>
+                                    <div class="content__news-item">
+                                        <h4 class="content__news-title main--text">Менеджмент XXI века. Надо ли готовиться к изменениям или мы давно уже должны были измениться?</h4>
+                                        <span class="content__news-data little-text-2">5 дек 2020</span>
+                                    </div>
+                                    <div class="content__news-item">
+                                        <h4 class="content__news-title main--text">ITAM&SAMDay – самая настоящая удача!</h4>
+                                        <span class="content__news-data little-text-2">13 дек 2020</span>
+                                    </div>
+                                    <div class="content__news-item">
+                                        <h4 class="content__news-title main--text">Секреты лицензирования. Всё, что вы хотели знать про Microsoft, SAP и Oracle, но не знали, у кого спросить ...</h4>
+                                        <span class="content__news-data little-text-2">10 дек 2020</span>
+                                    </div>
+                                    <div class="content__news-item">
+                                        <h4 class="content__news-title main--text">Менеджмент XXI века. Надо ли готовиться к изменениям или мы давно уже должны были измениться?</h4>
+                                        <span class="content__news-data little-text-2">5 дек 2020</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content__form">
+                                <h3 class="content__form-title">Подписка на рассылку</h3>
+                                <input class="content__form-email button" placeholder="Email@gmail.com">
+                                <button class="content__form-subscribe button">Подписаться <i class="ri-arrow-right-s-fill"></i></button>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                    </div>
                 <!--column right-->
-                <div class="inside__column-right">
-                    <h3 class="inside__news-header title--text">Популярные новости</h3>
-                    <div class="inside__news">
-                        <div class="inside__news-item">
-                            <h4 class="inside__news-title main--text">ITAM&SAMDay – самая настоящая удача!</h4>
-                            <span class="inside__news-data little-text-2">13 дек 2020</span>
-                        </div>
-                        <div class="inside__news-item">
-                            <h4 class="inside__news-title main--text">Секреты лицензирования. Всё, что вы хотели знать про Microsoft, SAP и Oracle, но не знали, у кого спросить ...</h4>
-                            <span class="inside__news-data little-text-2">10 дек 2020</span>
-                        </div>
-                        <div class="inside__news-item">
-                            <h4 class="inside__news-title main--text">Менеджмент XXI века. Надо ли готовиться к изменениям или мы давно уже должны были измениться?</h4>
-                            <span class="inside__news-data little-text-2">5 дек 2020</span>
+                <div class="content__column-right">
+                    <h3 class="content__news-header title--text">Популярные новости</h3>
+                    <div class="content__news-scroll" id="newsScroll">
+                        <div class="content__news" id="newsScrollContent">
+                            <div class="content__news-item">
+                                <h4 class="content__news-title main--text">1 ITAM&SAMDay – самая настоящая удача!</h4>
+                                <span class="content__news-data little-text-2">13 дек 2020</span>
+                            </div>
+                            <div class="content__news-item">
+                                <h4 class="content__news-title main--text">2 Секреты лицензирования. Всё, что вы хотели знать про Microsoft, SAP и Oracle, но не знали, у кого спросить ...</h4>
+                                <span class="content__news-data little-text-2">10 дек 2020</span>
+                            </div>
+                            <div class="content__news-item">
+                                <h4 class="content__news-title main--text">3 Менеджмент XXI века. Надо ли готовиться к изменениям или мы давно уже должны были измениться?</h4>
+                                <span class="content__news-data little-text-2">5 дек 2020</span>
+                            </div>
+                            <div class="content__news-item">
+                                <h4 class="content__news-title main--text">4 ITAM&SAMDay – самая настоящая удача!</h4>
+                                <span class="content__news-data little-text-2">13 дек 2020</span>
+                            </div>
+                            <div class="content__news-item">
+                                <h4 class="content__news-title main--text">5 Секреты лицензирования. Всё, что вы хотели знать про Microsoft, SAP и Oracle, но не знали, у кого спросить ...</h4>
+                                <span class="content__news-data little-text-2">10 дек 2020</span>
+                            </div>
+                            <div class="content__news-item">
+                                <h4 class="content__news-title main--text">6 Менеджмент XXI века. Надо ли готовиться к изменениям или мы давно уже должны были измениться?</h4>
+                                <span class="content__news-data little-text-2">5 дек 2020</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="inside__form">
-                        <h3 class="inside__form-title">Подписка на рассылку</h3>
-                        <input class="inside__form-email button" placeholder="Email@gmail.com">
-                        <button class="inside__form-subscribe button">Подписаться <i class="ri-arrow-right-s-fill"></i></button>
+                    <div class="content__form">
+                        <h3 class="content__form-title">Подписка на рассылку</h3>
+                        <input class="content__form-email button" placeholder="Email@gmail.com">
+                        <button class="content__form-subscribe button">Подписаться <i class="ri-arrow-right-s-fill"></i></button>
                     </div>
                 </div>
+                </div>
+
         </section>
     </main>
     <footer class="footer">
@@ -96,5 +152,6 @@
         </div>
     </footer>
 </div>
+<script src="./src/scripts/app.js" type="module"></script>
 </body>
 </html>

@@ -6,27 +6,42 @@
     flex-direction: column;
     row-gap: 40px;
     width: 800px;
+    @include laptop-s {
+      width: auto;
+    }
     &-img {
       width: 800px;
       height: 300px;
       border-radius: var(--radius);
+      @include laptop-s {
+        width: auto;
+      }
     }
   }
   &__columns {
     display: flex;
     flex-direction: row;
     column-gap: 40px;
+    @include mobile {
+      flex-direction: column;
+    }
     &-left {
       width: 440px;
       display: flex;
       flex-direction: column;
       row-gap: 20px;
+      @include laptop {
+        width: auto;
+      }
     }
     &-right {
       display: flex;
       flex-direction: column;
       row-gap: 10px;
       width: 320px;
+      @include laptop {
+        width: 100%;
+      }
       &-img {
         height: 170px;
         border-radius: var(--radius);
@@ -41,6 +56,7 @@
     &-button {
       color: var(--primary);
       background-color: var(--secondary--muted);
+      height: auto!important;
     }
   }
   &__container {
@@ -49,18 +65,37 @@
     display: flex;
     flex-direction: row;
     column-gap: 40px;
+    @include laptop {
+      row-gap: 40px;
+      padding-right: 80px;
+      padding-left: 80px;
+    }
+    @include mobile {
+      flex-direction: column;
+      padding-right: 20px;
+      padding-left: 20px;
+    }
   }
   &__column-right {
     width: 320px;
     display: flex;
     flex-direction: column;
     row-gap: 30px;
+    @include laptop {
+      width: auto;
+    }
+    @include laptop-s {
+      display: none;
+    }
   }
   &__column-left {
     width: 1150px;
     display: flex;
     flex-direction: column;
     row-gap: 40px;
+    @include laptop {
+      width: -webkit-fill-available;
+    }
   }
   &__news {
     display: flex;

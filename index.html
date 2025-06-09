@@ -24,11 +24,21 @@
                     <li class="header__menu-item"><a href="./search.html" class="header__menu-link main--text">Поиск</a></li>
                     <div class="header__menu-number"><i class="ri-phone-fill"></i> +7 (987) 887-87</div>
                 </menu>
+                <menu class="header__menu-burger">
+                    <li class="header__menu-item"><a href="./index.html" class="header__menu-link main--text choice--list">Главная</a></li>
+                    <li class="header__menu-item"><a href="./about.html" class="header__menu-link main--text">О нас</a></li>
+                    <li class="header__menu-item"><a href="./contacts.html" class="header__menu-link main--text">Контакты</a></li>
+                    <li class="header__menu-item"><a href="./search.html" class="header__menu-link main--text">Поиск</a></li>
+                    <div class="header__menu-number"><i class="ri-phone-fill"></i> +7 (987) 887-87</div>
+                </menu>
             </div>
         </header>
         <main>
             <div class="intro">
                 <img src="./src/img/intro.svg" alt="intro" class="">
+            </div>
+            <div class="intro__mobile">
+                <img src="./src/img/intro-mobile.jpg" alt="intro-mobile">
             </div>
             <section class="content">
                 <div class="content__container container">
@@ -149,18 +159,32 @@
 <!--row down-->
                         <div class="content__row-down">
                             <h3 class="content__news-header title--text">Популярные новости</h3>
-                            <div class="content__news">
-                                <div class="content__news-item">
-                                    <h4 class="content__news-title main--text">ITAM&SAMDay – самая настоящая удача!</h4>
-                                    <span class="content__news-data little-text-2">13 дек 2020</span>
-                                </div>
-                                <div class="content__news-item">
-                                    <h4 class="content__news-title main--text">Секреты лицензирования. Всё, что вы хотели знать про Microsoft, SAP и Oracle, но не знали, у кого спросить ...</h4>
-                                    <span class="content__news-data little-text-2">10 дек 2020</span>
-                                </div>
-                                <div class="content__news-item">
-                                    <h4 class="content__news-title main--text">Менеджмент XXI века. Надо ли готовиться к изменениям или мы давно уже должны были измениться?</h4>
-                                    <span class="content__news-data little-text-2">5 дек 2020</span>
+                            <div class="content__news-scroll-adaptive" id="newsScrollTablet">
+                                <div class="content__news" id="newsScrollContentTablet">
+                                    <div class="content__news-item">
+                                        <h4 class="content__news-title main--text">ITAM&SAMDay – самая настоящая удача!</h4>
+                                        <span class="content__news-data little-text-2">13 дек 2020</span>
+                                    </div>
+                                    <div class="content__news-item">
+                                        <h4 class="content__news-title main--text">Секреты лицензирования. Всё, что вы хотели знать про Microsoft, SAP и Oracle, но не знали, у кого спросить ...</h4>
+                                        <span class="content__news-data little-text-2">10 дек 2020</span>
+                                    </div>
+                                    <div class="content__news-item">
+                                        <h4 class="content__news-title main--text">Менеджмент XXI века. Надо ли готовиться к изменениям или мы давно уже должны были измениться?</h4>
+                                        <span class="content__news-data little-text-2">5 дек 2020</span>
+                                    </div>
+                                    <div class="content__news-item">
+                                        <h4 class="content__news-title main--text">ITAM&SAMDay – самая настоящая удача!</h4>
+                                        <span class="content__news-data little-text-2">13 дек 2020</span>
+                                    </div>
+                                    <div class="content__news-item">
+                                        <h4 class="content__news-title main--text">Секреты лицензирования. Всё, что вы хотели знать про Microsoft, SAP и Oracle, но не знали, у кого спросить ...</h4>
+                                        <span class="content__news-data little-text-2">10 дек 2020</span>
+                                    </div>
+                                    <div class="content__news-item">
+                                        <h4 class="content__news-title main--text">Менеджмент XXI века. Надо ли готовиться к изменениям или мы давно уже должны были измениться?</h4>
+                                        <span class="content__news-data little-text-2">5 дек 2020</span>
+                                    </div>
                                 </div>
                             </div>
                             <div class="content__form">
@@ -173,18 +197,32 @@
 <!--column right-->
                     <div class="content__column-right">
                         <h3 class="content__news-header title--text">Популярные новости</h3>
-                        <div class="content__news">
-                            <div class="content__news-item">
-                                <h4 class="content__news-title main--text">ITAM&SAMDay – самая настоящая удача!</h4>
-                                <span class="content__news-data little-text-2">13 дек 2020</span>
-                            </div>
-                            <div class="content__news-item">
-                                <h4 class="content__news-title main--text">Секреты лицензирования. Всё, что вы хотели знать про Microsoft, SAP и Oracle, но не знали, у кого спросить ...</h4>
-                                <span class="content__news-data little-text-2">10 дек 2020</span>
-                            </div>
-                            <div class="content__news-item">
-                                <h4 class="content__news-title main--text">Менеджмент XXI века. Надо ли готовиться к изменениям или мы давно уже должны были измениться?</h4>
-                                <span class="content__news-data little-text-2">5 дек 2020</span>
+                        <div class="content__news-scroll" id="newsScroll">
+                            <div class="content__news" id="newsScrollContent">
+                                <div class="content__news-item">
+                                    <h4 class="content__news-title main--text">1 ITAM&SAMDay – самая настоящая удача!</h4>
+                                    <span class="content__news-data little-text-2">13 дек 2020</span>
+                                </div>
+                                <div class="content__news-item">
+                                    <h4 class="content__news-title main--text">2 Секреты лицензирования. Всё, что вы хотели знать про Microsoft, SAP и Oracle, но не знали, у кого спросить ...</h4>
+                                    <span class="content__news-data little-text-2">10 дек 2020</span>
+                                </div>
+                                <div class="content__news-item">
+                                    <h4 class="content__news-title main--text">3 Менеджмент XXI века. Надо ли готовиться к изменениям или мы давно уже должны были измениться?</h4>
+                                    <span class="content__news-data little-text-2">5 дек 2020</span>
+                                </div>
+                                <div class="content__news-item">
+                                    <h4 class="content__news-title main--text">4 ITAM&SAMDay – самая настоящая удача!</h4>
+                                    <span class="content__news-data little-text-2">13 дек 2020</span>
+                                </div>
+                                <div class="content__news-item">
+                                    <h4 class="content__news-title main--text">5 Секреты лицензирования. Всё, что вы хотели знать про Microsoft, SAP и Oracle, но не знали, у кого спросить ...</h4>
+                                    <span class="content__news-data little-text-2">10 дек 2020</span>
+                                </div>
+                                <div class="content__news-item">
+                                    <h4 class="content__news-title main--text">6 Менеджмент XXI века. Надо ли готовиться к изменениям или мы давно уже должны были измениться?</h4>
+                                    <span class="content__news-data little-text-2">5 дек 2020</span>
+                                </div>
                             </div>
                         </div>
                         <div class="content__form">
@@ -209,5 +247,6 @@
         </div>
     </footer>
     </div>
+<script src="./src/scripts/app.js" type="module"></script>
 </body>
 </html>
